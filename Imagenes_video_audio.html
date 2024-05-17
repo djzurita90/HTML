@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Imagenes, Videos y Audio</title>
+</head>
+<body>
+
+  <!-- IMAGENES -->
+  <img src="https://www.w3.org/html/logo/downloads/HTML5_sticker.png" alt="HTML5 STICKER" width="500">
+
+  <!-- Varias Imagenes -->
+  <img srcset="car.jpeg 1x, car2.jpeg 2x" src="car.jpeg" alt="Descripcion de la imagen">
+  <img srcset="car.jpeg 500w, car2.jpeg 800w" sizes="(min-width:800px) 35w 100vw" src="car.jpeg" alt="Cars">
+
+  <!-- Picture -->
+  <picture>
+    <source srcset="car.jpeg" media="(min-width: 800px)">
+    <source srcset="car2.jpeg" media="(min-width: 500px)">
+    <img src="perritos.jpg" alt="">
+  </picture>
+
+  <!-- Art-Direction -->
+  <picture>
+    <source srcset="perritos.jpg" media="(min-width: 1024px)" alt="Perritos Golden">
+    <source srcset="gato.jpeg" media="(min-width: 640px)" alt="Gatito">
+    <img src="gato-vertical.jpeg" width="100%" alt="Gatito">
+  </picture>
+
+
+  <!-- VIDEOS -->
+  <video 
+    src="minius.mp4" 
+    width="800px"
+    controls
+    autoplay
+    muted
+    poster="perritos.jpg">
+    Su Navegador no Soporta HTML5
+  </video>
+
+  <!-- AUDIO -->
+  <audio 
+    src="amor_foda.mp3"
+    controls
+    autoplay
+    muted
+    >
+  </audio>
+  
+</body>
+</html>

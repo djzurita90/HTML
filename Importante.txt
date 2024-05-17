@@ -1,0 +1,68 @@
+//==>> SITIOS IMPORTANTES PARA REFERENCIAS DEL LENGUAJE HTML
+
+-> mozilla developer network:
+https://developer.mozilla.org/es/
+
+-> W3C:
+https://validator.w3.org/
+
+-> w3schools:
+https://www.w3schools.com/
+
+
+
+//==>> HERRAMIENTAS OUTLINE
+
+-> https://gsnedders.html5.org/outliner/
+
+
+
+//==>> MICRODATOS
+
+NOTA:se debe tomar en cuenta tres elementos importantes:
+-> Scope (itemscope)
+-> schema (itemtype)
+-> Propiedades (itemprop)
+
+-> http://schema.org/
+
+
+
+//==>> ANALIZAR ESTRUCTURA DE CODIGO
+
+-> https://search.google.com/structured-data/testing-tool/u/0/
+
+-> https://developers.google.com/search/tools/
+
+
+
+//==>> OPENGRAPH
+
+-> http://ogp.me/
+
+-> https://developers.facebook.com/docs/sharing/webmasters#markup
+
+-> https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started
+
+
+
+//==>> TEST OPENGRAPH
+
+-> https://developers.facebook.com/tools/debug/sharing/
+
+-> https://cards-dev.twitter.com/validator
+
+
+
+//==>> SITIOS CON IMAGENES GRATIS
+
+-> https://www.pexels.com/
+
+-> https://pixabay.com/es/
+
+
+
+//==>> IMPORTANTE::
+
+-> https://caniuse.com/ 
+

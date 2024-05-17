@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formularios</title>
+</head>
+<body>
+  <h1>Formularios</h1>
+  <!-- 
+    TYPOS DE ELEMENTOS EN UN FORMULARIO:
+
+    * Elementos que reciben informacion.
+    * Elementos que muestran informacion.
+    * Elementos para agrupar.
+  -->
+  <form action="procesar.php" method="post" autocomplete="off">
+    <!-- Elementos para recibir informacion -->
+    <input type="text">
+
+    <!-- Elementos para mostrar informacion -->
+    <label for="">Mostrando Informacion</label>
+
+    <!-- Elementos para agrupar -->
+    <fieldset>
+      <!-- El legend es el captions o titulo del fieldset -->
+      <legend>Datos personales</legend>
+      <label for="">Nombre</label>
+      <input type="text">
+    </fieldset>
+    <fieldset>
+      <legend>Direccion</legend>
+      <label for="">Calle</label>
+      <input type="text">
+      <label for="">Ciudad</label>
+      <input type="text">
+    </fieldset>
+
+    <!-- Elementos para enviar el formulario -->
+    <button>Enviar</button>
+    <input type="submit" value="Listo">
+    <input type="image" src="html5icon.png">
+  </form>
+
+  <form action="">
+
+    <h2>Tipos de Inputs</h2>
+    <!-- Ligar o Asociar un label con un input -->
+    <label for="nombre">Nombre</label>
+    <input id="nombre" type="text">
+    <br>
+
+    <!-- Otra forma de Asociar -->
+    <label>
+      Nombre
+      <input type="text">
+    </label>
+
+    <br>
+    <!-- Atributos -->
+    <input 
+      type="text" 
+      name="nombre" 
+      value="" 
+      placeholder="Nombre"
+      required
+      disabled
+      multiple
+      autofocus
+      readonly
+      maxlength="20"
+      minlength="10"
+      tabindex="2"
+      >
+    
+    <br>
+    <!-- Typos de Campos -->
+    <input type="text">
+    <input type="password">
+    <input type="url">
+    <input type="tel">
+    <input type="number">
+    <input type="email">
+    <input type="radio">
+    <input type="checkbox">
+    <input type="color">
+    <input type="search">
+    <input type="date">
+    <input type="time">
+    <input type="range">
+    <input type="file">
+    <input type="reset">
+
+    <h2>Selectores</h2>
+    <!-- Selectores -->
+    <select name="color" id="color">
+      <option value="0">Selecciona Color</option>
+      <option value="amarillo">Amarillo</option>
+      <option value="azul">Azul</option>
+      <option value="rojo">Rojo</option>
+    </select>
+
+    <!-- Multiple -->
+    <select multiple name="fruta" id="fruta">
+      <option value="0">Selecciona Fruta</option>
+      <option value="mango">Mango</option>
+      <option value="pera">Pera</option>
+      <option value="fresa">Fresa</option>
+    </select>
+
+    <!-- Agrupar options -->
+    <select name="paises" id="paises">
+      <option value="0">Selecciona un Pais</option>
+      <optgroup label="America">
+        <option value="argentina">Argentina</option>
+        <option value="chile">Chile</option>
+        <option value="venezuela">Venezuela</option>
+        <option value="peru">Peru</option>
+      </optgroup>
+
+      <optgroup label="Europa">
+        <option value="españa">España</option>
+        <option value="francia">Francia</option>
+        <option value="alemania">Alemania</option>
+        <option value="inglaterra">Inglaterra</option>
+      </optgroup>
+
+    </select>
+
+    <h2>Datalist</h2>
+    <input list="comidas">
+    <datalist id="comidas">
+      <option value="arepas">Arepas</option>
+      <option value="hamburguesas">Hamburguesas</option>
+      <option value="sopas">Sopas</option>
+    </datalist>
+
+    <h2>Textarea</h2>
+    <textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="140"></textarea>
+    <span id="caracteres"></span>
+    <button>Enviar</button>
+    
+  </form>
+
+  <script>
+    // Contador Caracteres
+    let i = 140;
+    document.getElementById('mensaje').addEventListener
+    ('keyup', function(){
+      i--
+      if(i >= 0){
+        document.getElementById('caracteres').innerHTML = 'Te quedan ' +i+ ' Caracteres';
+      }
+    })
+  </script>
+</body>
+</html>

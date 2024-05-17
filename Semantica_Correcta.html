@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8">
+    <title>Titulo</title>
+    <meta name="description" content="--descripcion de la pagina--">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="html5icon.png" type="image/x-icon">
+    <!-- 
+      Estructura de los OpenGraph:
+
+      <meta property="og:type" content=""/>
+    -->
+    <meta property="og:url" content="http://www.miwebsite.com"/>
+    <meta property="og:type" content="web site" />
+    <meta property="og:title" content="Titulo web site" />
+    <meta property="og:description" content="Descripcion web site" />
+    <meta property="og:image" content="image.png"/>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nytimes">
+    <meta name="twitter:creator" content="@SarahMaslinNir">
+    <meta name="twitter:title" content="Parade of Fans for Houston’s Funeral">
+    <meta name="twitter:description" content="NEWARK - The guest list and parade of limousines with celebrities emerging from them seemed more suited to a red carpet event in Hollywood or New York than than a gritty stretch of Sussex Avenue near the former site of the James M. Baxter Terrace public housing project here.">
+    <meta name="twitter:image" content="http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg">
+  </head>
+  <body>
+    <header id="main-header">
+      <h1 class="title-header" data-title="Titulo del Sitio Web">Titulo Cabecera</h1>
+      <nav role="navigation">
+        <ul>
+          <li><a href="http://www.google.com" title="Ir a google">Ir a Google</a></li>
+          <li><a href="http://www.facebook.com" title="Ir a Facebook">Ir a Facebook</a></li>
+        </ul>
+      </nav>
+      <figure>
+        <img src="html5icon.png" alt="Logo html5">
+      </figure>
+    </header>
+    <main role="main">
+      <h1>Titulo Main</h1>
+      <!--Micro Datos-->
+      <article class="product" itemscope itemtype="http://schema.org/Product">
+        <h2 itemprop="name">Subtitulo</h2>
+        <p itemprop="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, expedita atque voluptatum rem enim consequuntur necessitatibus quod perspiciatis autem pariatur modi est aspernatur vel delectus odit, corporis illo optio amet.</p>
+        <img src="html5icon.png" alt="Imagen Producto" itemprop="image">
+      </article>
+    </main>
+    <footer>
+      <h1>Titulo footer</h1>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- <base href="http://localhost/"> -->
+</head>
+<body>
+  <!-- 
+    Tipos de Rutas:
+      1- Absolutas: Siempre te llevan al mismo lugar.
+      2- Relativas: Puede variar segun la ubicacion y el proyecto.
+        2.1 Relativas a la Carpeta Actual.
+        2.2 Relativas a la Raiz del Servidor.
+
+  -->
+  <h1>Enlaces - Hipervinculos</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="https://www.w3.org/html/logo/downloads/HTML5_sticker.png" download>Imagen</a>
+    <a href="#capitulo1">Capitulo1</a>
+    <a href="#capitulo2">Capitulo2</a>
+    <a href="#capitulo3">Capitulo3</a>
+    <!-- Hash Hacia Otra Pagina -->
+    <a href="./carpeta/#idElement">Otro Hash</a>
+    <!-- Absolutas -->
+    <a href="www.google.com" target="_blank">Google</a>
+    <a href="www.facebook.com">Facebook</a>
+    <!-- Relativas -->
+    <a href="./carpeta/archivo.html">Google</a>
+    <a href="../carpeta/">Facebook</a>
+  </nav>
+  <section id="capitulo1">
+    <h2>Seccion 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatem fuga dignissimos deleniti sit facere explicabo commodi dicta earum est, expedita dolorem, quisquam mollitia enim! Consequatur perferendis magni dolorem quidem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatem fuga dignissimos deleniti sit facere explicabo commodi dicta earum est, expedita dolorem, quisquam mollitia enim! Consequatur perferendis magni dolorem quidem!</p>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section id="capitulo2">
+    <h2>Seccion 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatem fuga dignissimos deleniti sit facere explicabo
+      commodi dicta earum est, expedita dolorem, quisquam mollitia enim! Consequatur perferendis magni dolorem quidem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatem fuga dignissimos deleniti sit facere explicabo
+      commodi dicta earum est, expedita dolorem, quisquam mollitia enim! Consequatur perferendis magni dolorem quidem!</p>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section id="capitulo3">
+    <h2>Seccion 3</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatem fuga dignissimos deleniti sit facere explicabo
+      commodi dicta earum est, expedita dolorem, quisquam mollitia enim! Consequatur perferendis magni dolorem quidem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatem fuga dignissimos deleniti sit facere explicabo
+      commodi dicta earum est, expedita dolorem, quisquam mollitia enim! Consequatur perferendis magni dolorem quidem!</p>
+  </section>
+
+
+  <!-- Listas -->
+
+  <!-- Ordenadas -->
+  <ol>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+  </ol>
+
+  <!-- Desordenadas -->
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+  </ul>
+
+  <!-- Combinacion -->
+  <ol>
+    <li>Lunes
+      <ul>
+        <li>Tarea 1</li>
+        <li>Tarea 2</li>
+        <li>Tarea 3</li>
+      </ul>
+    </li>
+    <li>Martes
+      <ul>
+        <li>Tarea 1</li>
+        <li>Tarea 2</li>
+        <li>Tarea 3</li>
+      </ul>
+    </li>
+    <li>Miercoles
+      <ul>
+        <li>Tarea 1</li>
+        <li>Tarea 2</li>
+        <li>Tarea 3</li>
+      </ul>
+    </li>
+  </ol>
+
+  <!-- menu -->
+  <nav role="navigation">
+    <ul>
+      <li><a href="#">Elemento 1</a></li>
+      <li><a href="#">Elemento 2</a></li>
+      <li><a href="#">Elemento 3</a>
+        <ul>
+          <li>SubElemento 1</li>
+          <li>SubElemento 2</li>
+          <li>SubElemento 3</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Atributos de las listas: OJO solo las listas ordenadas tienen atributos -->
+  <ol reversed>
+    <li>lunes</li>
+    <li>martes</li>
+    <li>miercoles</li>
+  </ol>
+
+  <ol start="10">
+    <li>lunes</li>
+    <li>martes</li>
+    <li>miercoles</li>
+  </ol>
+
+  <ol type="a">
+    <li>lunes</li>
+    <li>martes</li>
+    <li>miercoles</li>
+  </ol>
+
+  <ol type="i">
+    <li>lunes</li>
+    <li>martes</li>
+    <li>miercoles</li>
+  </ol>
+
+  <ol>
+    <li value="6">lunes</li>
+    <li>martes</li>
+    <li>miercoles</li>
+  </ol>
+
+
+  <!-- Listas de Definicion -->
+  <dl>
+    <dt>Html</dt>
+    <dd>Lenguaje de Marcado</dd>
+    <dt>PHP</dt>
+    <dd>Lenguaje de Servidor</dd>
+    <dt>CSS</dt>
+    <dd>Lenguaje de estilos</dd>
+  </dl>
+
+  <!-- Tablas -->
+
+  <!-- 
+    Atributos de las tablas:
+
+
+  -->
+  <table>
+    <caption>Tabla Usuarios</caption>
+    <colgroup>
+      <!-- <col style="background: red;">
+      <col style="background: blue;">
+      <col style="background: yellow;"> -->
+      <!-- Otra Manera -->
+      <col span="2">
+      <col style="background: purple;">
+    </colgroup>
+    <thead>
+      <tr>
+        <th rowspan="2">Nombre</th>
+        <th rowspan="2">Apellido</th>
+        <th>Edad</th>
+      </tr>
+      <tr>
+        <th>Ciudad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Danilo</td>
+        <td>Zurita</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>Pedro</td>
+        <td>Perez</td>
+        <td>22</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Correo</th>
+        <th>facebook</th>
+        <th>Whatsapp</th>
+        <th>Otros Datos</th>
+      </tr>
+      <tr>
+        <td  colspan="2">d@correo.com</td>
+        <td>danilozurita</td>
+        <td>04241245754</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

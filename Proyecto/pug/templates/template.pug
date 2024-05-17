@@ -1,0 +1,25 @@
+block config
+  include ../config/config.pug
+doctype html
+html
+  head
+    title #{pageTitle} | #{siteTitle}
+    meta(charset="utf-8")
+    meta(name="description" content=description)
+  body
+    header
+      a(href="./")
+        img(src='img/logo.gif' height="100" alt="LogoABC")
+      nav
+        include ../blocks/menu.pug
+    div
+      block banner
+        img(src='/img/' + pageTitle + '.jpg' alt=pageTitle)
+    main
+      block main
+    if aside
+      aside
+        p Aside #{pageTitle} Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt exercitationem blanditiis numquam architecto fugit mollitia autem similique aliquam dolorum, consequatur consectetur necessitatibus maxime expedita at eligendi rem officiis, excepturi cumque.
+    footer
+       p Creativos ABC - Todos los derechos reservados&reg;.
+       include ../blocks/siguenos.pug  
